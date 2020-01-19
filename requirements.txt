@@ -1,4 +1,3 @@
-gitahttps://github.com/Rapptz/discord.py@rewrite
 PyNaCl
 pandas
 dnspython
