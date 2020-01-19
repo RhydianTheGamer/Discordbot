@@ -5,9 +5,6 @@ import random
 import asyncio
 import os
 
-
-
-
 PREFIX = '+'
 client = commands.Bot(command_prefix=PREFIX)
 
@@ -21,36 +18,4 @@ async def on_ready():
         print("activity:",activity)
         print()
         print("status:",status)
-#funcommands load
-@client.command()
-async def fcload(ctx, extension):
-        client.load_extension(f'FunCommands.{extension}')
-
-
-#funcommandsunload
-@client.command()
-async def fcunload(ctx, extension):
-        client.unload_extension(f'FunCommands.{extension}')
-for filename in os.listdir('./FunCommands'):
-        if filename.endswith('.py'):
-                client.load_extension(f'FunCommands.{filename[:-3]}')
-
-
-
-#admincommands load
-@client.command()
-async def acload(ctx, extension):
-        client.load_extension(f'AdminCommands.{extension}')
-
-
-#admincommands unload
-@client.command()
-async def acunload(ctx, extension):
-        client.unload_extension(f'AdminCommands.{extension}')
-
-#admincommands
-for filename in os.listdir('./AdminCommands'):
-        if filename.endswith('.py'):
-                client.load_extension(f'AdminCommands.{filename[:-3]}')
-
-client.run("NjE5ODM0NTc2NjgzOTI1NTI0.XXX-xA.I3iYay81a2niHl-Cn7bOvK5D1SA")
+client.run("NjY4MzUwMzg4OTgxOTg5Mzg2.XiQUUA.ei3ZK5KC6qG-kwr_Yosn3XhwHaA")
